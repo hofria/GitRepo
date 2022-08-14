@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi titulo</title>
+</head>
+<body>
+    <h1>Encabezado 1</h1>
+    <table>
+        <tr>
+            <td>
+                <video src="video.mp4" autoplay loop muted playsinlines></video>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <audio src="audio.mp3" id="MiAudio" autoplay muted controls></audio>
+            </td>   
+        </tr>
+    </table>
+
+    <script>
+        window.onload = function () {
+            var audio = document.getElementById("MiAudio");
+            audio.volume = 0.2;
+            /*document.getElementById("MiAudio").muted = false;*/
+            audio.muted = true;
+            audio.autoplay = true;
+        };
+    </script>
+
+    <h2>Encabezado 2</h2>
+    <h1>Encabezado 1b</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam iusto hic id qui nostrum neque, quae sapiente dolorem dolorum perspiciatis nihil, voluptas corrupti. Sunt officia voluptate iste. Pariatur, fugiat voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita error eaque sed totam dolorum aperiam neque veritatis et minima, nesciunt repellat rem aliquid accusantium odio, quia, recusandae assumenda fugit. Doloribus.</p>
+    <img src="casa.jpg" alt="Casa">
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+    </ul>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id veritatis numquam provident ea, impedit delectus natus quia magnam qui exercitationem obcaecati ex enim aut porro, soluta voluptatibus nisi nam? Para google haga click <a href="http://www.google.com" target="_blank">aqui</a>.</li>
+    </ul>
+    
+
+</body>
+</html>

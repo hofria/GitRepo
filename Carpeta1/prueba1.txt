@@ -1,0 +1,10 @@
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 8CAE-D262
+
+ Directorio de C:\Users\hofria\GitRepo\Carpeta1
+
+13/08/2022  23:15    <DIR>          .
+13/08/2022  23:15    <DIR>          ..
+13/08/2022  23:15                 0 prueba1.txt
+               1 archivos              0 bytes
+               2 dirs  42.429.132.800 bytes libres

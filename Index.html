@@ -1,57 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exchange</title>
+    <link rel="stylesheet" href="Boussole.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="favicon.svg">
+    <title>Boussole</title>
 </head>
-<body style="background-color: black; color: white;">
-    <table width = 100% border="0" cellspacing="0" cellpadding="0">
-        <tr style="background-color: rgb(1, 1, 56)">
+
+<body>
+    <table width=100% border="0" cellspacing="0" cellpadding="0">
+        <tr class="fondoboussole">
             <td width=33%></td>
-            <td width=33%><h1 align="CENTER">Boussole</h1></td>
-            <td width=33%></audio></td>
+            <td width=33%>
+                <h1 align="CENTER"><i class="fa-solid fa-binoculars"></i>&nbsp;Boussole</h1>
+            </td>
+            <td width=33% align="right">
+                <div id="nombreusuario"><span>Juan</span>&nbsp</div>
+            </td>
         </tr>
         <tr>
-            <td><h2>Compras en Línea</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam iusto hic id qui nostrum neque, quae sapiente dolorem dolorum perspiciatis nihil, voluptas corrupti. Sunt officia voluptate iste. Pariatur, fugiat voluptatem.</p>
+            <td>
+                <h2>Compras en Línea</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam iusto hic id qui nostrum neque, quae
+                    sapiente dolorem dolorum perspiciatis nihil, voluptas corrupti. Sunt officia voluptate iste.
+                    Pariatur, fugiat voluptatem.</p>
             </td>
             <td align="CENTER">
                 <video width=70% height=70% src="video.mp4" autoplay loop muted playsinlines></video>
             </td>
-            <td><h2>Ingreso a Boussole</h2>
-                <form action="get">
-                    <table>
+            <td align="CENTER" class="tarjeta">
+                <h2>Ingreso a Boussole</h2>
+                <form action="identificacion.html" method="post">
+                    <table align="CENTER">
                         <tr>
-                            <td>Usuario: </td><td><input name="usuario" type="text" maxlength="50"></td> 
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>Contraseña: </td><td><input name="clave" type="password" maxlength="50"></td> 
+                            <td>Usuario: </td>
+                            <td><input name="usuario" type="text" maxlength="50"></td>
                         </tr>
                         <tr>
-                            <td></td><td><button type="submit">Ingresar</button></td> 
+                            <td>Contraseña: </td>
+                            <td><input name="clave" type="password" maxlength="50"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="submit">Ingresar</button></td>
                         </tr>
                     </table>
-                    <a href="recuperarclave.html">¿Has olvidado tu nombre de usuario/contraseña?</a>
                 </form>
+                <a class="linkpequeño" href="recuperarclave.html">¿Has olvidado tu contraseña?</a>
             </td>
-        </td>
+            </td>
         </tr>
         <tr>
-            <td valign="top">
+            <td>
                 <h2>Venta de casas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita error eaque sed totam dolorum aperiam neque veritatis et minima, nesciunt repellat rem aliquid accusantium odio, quia, recusandae assumenda fugit. Doloribus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita error eaque sed totam dolorum
+                    aperiam neque veritatis et minima, nesciunt repellat rem aliquid accusantium odio, quia, recusandae
+                    assumenda fugit. Doloribus.</p>
+            </td>
+            <td>
+                <h2>Gravity Falls</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita error eaque sed totam dolorum
+                    aperiam neque veritatis et minima, nesciunt repellat rem aliquid accusantium odio, quia, recusandae
+                    assumenda fugit. Doloribus.</p>
+            </td>
+            <td>
+                <h2>Musica</h2>
+                <audio style="background-color: black; color: white;" src="audio.mp3" id="MiAudio" autoplay muted
+                    controls></audio>
+            </td>
+        </tr>
+        <tr>
+            <td align="CENTER">
                 <img width=30% height=30% src="casa.jpg" alt="Casa">
             </td>
-            <td valign="top">
-                <h2>Gravity Falls</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita error eaque sed totam dolorum aperiam neque veritatis et minima, nesciunt repellat rem aliquid accusantium odio, quia, recusandae assumenda fugit. Doloribus.</p>
+            <td align="CENTER">
                 <img width=30% height=30% src="dipper.jpg" alt="Casa">
             </td>
-            <td valign="top"><h2>Musica</h2>
-                <audio style="background-color: black; color: white;" src="audio.mp3" id="MiAudio" autoplay muted controls></audio>
-            </td>   
+            <td>
+            </td>
         </tr>
     </table>
 
@@ -59,34 +95,34 @@
         window.onload = function () {
             var audio = document.getElementById("MiAudio");
             audio.volume = 0.2;
-            /*document.getElementById("MiAudio").muted = false;*/
+            // document.getElementById("MiAudio").muted = false;
             audio.autoplay = true;
             audio.muted = false;
         };
     </script>
-    <table width=100% >
-        <tr>
-            <td ><ul>
-                <li>Item 1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro animi aperiam neque. Dolorum qui rem in veniam! Magni nesciunt amet a optio aut ducimus non explicabo obcaecati cupiditate, velit atque.</li>
-                <li>Item 2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam impedit dolore adipisci nesciunt fugit. Earum, asperiores praesentium reprehenderit quam eos ipsum provident eius sint cumque corporis voluptate quibusdam aliquam inventore!</li>
-                <li>Item 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quo, dignissimos laborum mollitia consequuntur aut quas doloremque harum vero vitae error! Aut corporis assumenda similique itaque maiores. Perspiciatis, quas odit.</li>
-                <li>Item 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui enim nulla placeat doloribus at illum eius, esse corrupti, assumenda accusantium nesciunt ullam unde non perspiciatis, soluta eum magni animi ut!</li>
-                <li>Item 5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia ipsum incidunt, animi inventore fugit eligendi laudantium, numquam, sit dolor blanditiis iure voluptatibus odio praesentium rerum ad ullam necessitatibus aut?</li>
-                <li>Item 6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae accusantium deserunt minima suscipit officiis vero, et possimus id eius laudantium rerum iste quibusdam consequuntur sunt nostrum? Quod, a sapiente!</li>
-                <li>Item 7. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis quidem dolor odio reiciendis, nemo minus voluptates labore esse aut placeat fugiat quo. Aut sed, totam sequi illo architecto dolore!</li>
-                </ul>
-            </td>
-            <td>
-                <ol>
-                    <li>Item 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum reprehenderit perferendis similique explicabo a eius itaque. Nostrum ullam blanditiis libero quia cupiditate quaerat veritatis inventore quos, laboriosam voluptates nobis consequuntur!</li>
-                    <li>Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione qui, vel nobis non id dolor? Eveniet, beatae. Est soluta ex impedit facilis dicta cupiditate totam. Quis quidem consectetur ducimus accusamus?</li>
-                    <li>Item 3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio deserunt, reprehenderit quaerat repudiandae quibusdam, esse mollitia repellendus neque at vel sint eum facere laudantium ex et, porro sapiente corrupti.</li>
-                    <li>Item 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet exercitationem eaque vero, cupiditate aut consequuntur, quas consectetur quam esse corrupti. Magnam error sapiente non ducimus obcaecati, ab reiciendis ipsum.</li>
-                    <li>Item 5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa rerum et, illo, dolore quia possimus, voluptatum eveniet ab sunt repudiandae officia assumenda corrupti ducimus quasi molestiae ipsam voluptatem aliquid.</li>
-                    <li>Item 6, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur voluptate qui itaque excepturi veritatis assumenda aliquid blanditiis facere vel vitae, deserunt consequuntur quisquam, minus saepe, dicta sunt rem ipsam illo.</li>
-                    <li>Item 7. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae omnis, magnam consectetur ullam delectus corporis ex, assumenda architecto quibusdam veniam blanditiis ipsum harum perspiciatis dolore, aliquam vero iste quod molestias.</ul>
-            </td>
-        </tr>
-    </table>
+
+    <hr>
+    <div class="texto">
+         <ol>
+            <li>Item 1. </li>
+            <li>Item 2. </li>
+            <li>Item 3. </li>
+            <li>Item 4. </li>
+            <li>Item 5. </li>
+            <li>Item 6. </li>
+            <li>Item 7. </li>
+        </ol>
+        <ul>
+            <br>
+            <li>Item 1. </li>
+            <li>Item 2. </li>
+            <li>Item 3. </li>
+            <li>Item 4. </li>
+            <li>Item 5. </li>
+            <li>Item 6. </li>
+            <li>Item 7. </li>
+        </ul>
+    </div>
 </body>
+
 </html>

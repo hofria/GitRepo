@@ -1,0 +1,74 @@
+/* cssgenerator.org */
+/* https://cdnjs.com/ */
+
+
+body{
+    font-family: serif, sans-serif, Helvetica;
+    background-color: black; 
+    color: white;
+    /* color: white;    ctrl + }  para hacer comentarios */
+}
+
+a{
+    color: cyan;
+}
+/* Para utilizar como clase */
+.linkpequeño{
+    font-size: x-small;
+}
+
+
+/* Para utilizar en un ID */
+#nombreusuario{
+    font-size: small;
+    padding: 20px;
+}
+
+#nombreusuario:hover{
+    background-color: coral;
+}
+
+#nombreusuario span{
+    color: cyan;
+}
+
+#nombreusuario::before{
+    content: "Usuario: ";
+}
+
+.fondoboussole {
+    background: #060606;
+    background: linear-gradient(270deg,#060606 0%, #0013ff 45%, #060606 100%);
+    background: -webkit-linear-gradient(270deg,#060606 0%, #0013ff 45%, #060606 100%);
+    background: -moz-linear-gradient(270deg,#060606 0%, #0013ff 45%, #060606 100%);
+}
+
+img{
+    box-shadow: 5px 5px 30px gray;
+    /* Eje X    Eje Y    desenfoque     color */
+}
+
+.tarjeta{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(51, 50, 50);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px 0px;
+    font-size: small;
+}
+
+ td{
+    /* padding: 5px;
+    box-sizing: border-box; */
+    align-items: top;
+} 
+
+.texto{column-count: 2;
+    column-gap: 10px;
+    column-rule: 1px solid cornflowerblue;
+    margin-top: 0px;
+}
+
+.texto li:nth-child(odd) {
+    background-color: rgb(51, 50, 50);
+}
